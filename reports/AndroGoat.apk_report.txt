@@ -1,0 +1,12 @@
+AndroSentry Security Report
+
+Scan Date: 2026-02-15 20:49:45.035736
+Total Findings: 1
+Risk Score: 10
+Risk Level: Medium
+
+Title: Debug Mode Enabled
+Severity: High
+OWASP: M7: Code Quality
+Remediation: Disable debug mode in production.
+

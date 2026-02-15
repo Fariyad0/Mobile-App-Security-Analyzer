@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: linear-gradient(180deg, #111827, #1f2937);
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #38bdf8;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background: #1e293b;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #2563eb;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Table */
+.results-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e293b;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+th {
+    background: #111827;
+}
+
+/* Risk Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.low {
+    background: #16a34a;
+}
+
+.medium {
+    background: #f59e0b;
+}
+
+.high {
+    background: #dc2626;
+}
+
+.critical {
+    background: #7f1d1d;
+}
+
+/* Download Button */
+.download-btn {
+    text-decoration: none;
+    color: white;
+    background: #10b981;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background: #059669;
+}
+
+/* Error */
+.error {
+    color: red;
+    margin-top: 15px;
+}

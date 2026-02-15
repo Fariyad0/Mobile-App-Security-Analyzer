@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Scan History</h1>
+
+<div class="results-table">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Filename</th>
+            <th>Date</th>
+            <th>Total Findings</th>
+            <th>Risk Score</th>
+            <th>Risk Level</th>
+            <th>Report</th>
+        </tr>
+
+        {% for scan in scans %}
+        <tr>
+            <td>{{ scan[0] }}</td>
+            <td>{{ scan[1] }}</td>
+            <td>{{ scan[2] }}</td>
+            <td>{{ scan[3] }}</td>
+            <td>{{ scan[5] }}</td>
+            <td>
+                <span class="badge {{ scan[6]|lower }}">
+                    {{ scan[6] }}
+                </span>
+            </td>
+            <td>
+                <a class="download-btn" href="/reports/{{ scan[4] }}">
+                    Download
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

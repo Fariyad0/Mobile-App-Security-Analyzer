@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="topbar">
+    <h1>Mobile App Security Analysis</h1>
+</div>
+
+<div class="upload-section">
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="apkfile" required>
+        <button type="submit">Scan APK</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</div>
+
+{% endblock %}

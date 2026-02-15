@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Generated Reports</h1>
+
+<ul>
+    {% for file in files %}
+        <li>
+            <a href="/reports/{{ file }}">{{ file }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
